@@ -72,6 +72,10 @@ const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
                 <div className="w-full lg:w-1/2 p-8 md:p-12">
                     <h2 className="text-2xl font-semibold mb-6">Login</h2>
 
+                    {user && (
+                      <p className="text-sm text-gray-700 mb-4">Welcome back, {user.name}!</p>
+                    )}
+
                     <form className="space-y-6">
                         <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
