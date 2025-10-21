@@ -63,7 +63,7 @@ export default function TaskIndex() {
       navigate("/booking"); // ✅ Nếu đã login
     } else {
       alert("⚠️ Vui lòng đăng nhập để đặt vé!");
-      navigate("/users/login"); // ❌ Chưa login → về login
+      navigate("/login"); // ❌ Chưa login → về login
     }
   };
   const handleCartClick = () => {
@@ -71,7 +71,7 @@ export default function TaskIndex() {
       navigate("/cart"); // ✅ Có user thì cho vào giỏ hàng
     } else {
       alert("⚠️ Vui lòng đăng nhập để vào giỏ hàng!");
-      navigate("/users/login"); // ❌ Chưa login thì về login
+      navigate("/login"); // ❌ Chưa login thì về login
     }
   };
 
@@ -134,7 +134,7 @@ export default function TaskIndex() {
   const handleLogout = () => {
     localStorage.removeItem("user");
     setUser(null);
-    navigate("/users/login");
+    navigate("/login");
   };
 
 
@@ -229,7 +229,7 @@ export default function TaskIndex() {
           ) : (
             // Nếu chưa đăng nhập
             <Link
-              to="/users/login"
+              to="/login"
               className="flex items-center space-x-1 hover:text-yellow-400 transition"
             >
               <svg
@@ -351,7 +351,7 @@ export default function TaskIndex() {
                         navigate("/booking"); // ✅ Có user thì cho đặt vé
                       } else {
                         alert("Vui lòng đăng nhập để đặt vé 🎟️");
-                        navigate("/users/login"); // ❌ Chưa login thì về login
+                        navigate("/login"); // ❌ Chưa login thì về login
                       }
                     }}
                     className="bg-red-600 text-white w-full py-2 rounded-lg font-semibold hover:bg-red-500 hover:shadow-[0_0_12px_rgba(239,68,68,0.7)] transition transform hover:scale-105"

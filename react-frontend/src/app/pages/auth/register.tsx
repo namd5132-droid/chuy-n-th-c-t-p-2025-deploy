@@ -136,7 +136,7 @@ export default function RegisterUser() {
               </button>
             </form>
             <p className="mt-6 text-center text-sm text-gray-600">
-              <Link to="/users/login" className="text-red-600 font-medium hover:underline">  Already have an account? Login</Link>
+              <Link to="/login" className="text-red-600 font-medium hover:underline">  Already have an account? Login</Link>
             </p>
           </div>
         </div>

@@ -13,11 +13,11 @@ import FillNow from "./pages/fill/now";
 import FillImax from "./pages/fill/imax";
 const router = createBrowserRouter([
   {
-    path: "/users/register",
+    path: "/register",
     element: <RegisterUser />,
   },
   {
-    path: "/users/login",
+    path: "/login",
     element: <LoginUser />,
   },
   {

@@ -141,7 +141,7 @@ export default function Search() {
                 navigate("/booking"); // ✅ Có user thì cho đặt vé
               } else {
                 alert("⚠️ Vui lòng đăng nhập để đặt vé!");
-                navigate("/users/login"); // ❌ Chưa login thì về login
+                navigate("/login"); // ❌ Chưa login thì về login
               }
             }}
             className="bg-red-600 w-full py-2 rounded-lg font-semibold text-white 

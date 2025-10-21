@@ -103,7 +103,7 @@ export default function Detail() {
         navigate("/booking"); // ✅ Nếu có user thì đi tiếp
       } else {
         alert("Vui lòng đăng nhập để đặt vé 🎟️");
-        navigate("/users/login"); // ❌ Nếu chưa login thì chuyển login
+        navigate("/login"); // ❌ Nếu chưa login thì chuyển login
       }
     }}
     className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold 

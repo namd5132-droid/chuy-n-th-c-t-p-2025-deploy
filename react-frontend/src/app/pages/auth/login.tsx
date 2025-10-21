@@ -110,7 +110,7 @@ const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
                     </form>
 
                     <div className="mt-6 border-t pt-4 text-sm text-gray-600">
-                        <Link to="/users/register" className="text-purple-600 font-medium hover:underline">Create account</Link>
+                        <Link to="/register" className="text-purple-600 font-medium hover:underline">Create account</Link>
                     </div>
                 </div>
             </div>

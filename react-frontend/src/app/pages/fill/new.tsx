@@ -96,7 +96,7 @@ useEffect(() => {
     localStorage.removeItem("token");
     localStorage.removeItem("userName");
     setUser(null);
-    navigate("/users/login");
+    navigate("/login");
   };
 
   return (
@@ -174,7 +174,7 @@ useEffect(() => {
             </div>
           ) : (
             <Link
-              to="/users/login"
+              to="/login"
               className="flex items-center space-x-1 hover:text-sky-400"
             >
               <svg
