@@ -13,6 +13,14 @@ import FillNow from "./pages/fill/now";
 import FillImax from "./pages/fill/imax";
 const router = createBrowserRouter([
   {
+    path: "users/register",
+    element: <RegisterUser />,
+  },
+  {
+    path: "users/login",
+    element: <LoginUser />,
+  },
+  {
     path: "/register",
     element: <RegisterUser />,
   },
@@ -21,6 +29,10 @@ const router = createBrowserRouter([
     element: <LoginUser />,
   },
   {
+    path: "/tasks",
+    element: <TaskIndex />,
+  },
+    {
     path: "/",
     element: <TaskIndex />,
   },
